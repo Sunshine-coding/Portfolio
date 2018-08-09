@@ -1,0 +1,318 @@
+/* body */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+}
+
+/* Header*/
+
+#hyesoo-photo {
+    border-radius: 40%;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+    margin: 0 auto;
+    border: 5px dashed rgba(23, 37, 42, 0.5);
+}
+
+/* intro */
+
+.intro {
+    padding-right: 2em;
+}
+
+.intro2 {
+    padding-left: 2em;
+}
+
+div p {
+    margin: 50px auto;
+    padding: 0;
+}
+
+div p::first-letter {
+    color: #17252a;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, 0.25);
+}
+
+.intro-highlight {
+    margin: 100px 0px 0px 100px;
+    font-size: 0.8em;
+    border-style: dashed solid;
+    border-color: #17252a;
+    border-width: 2px 20px 4px 20px;
+    border-radius: 5px 25px;
+    text-transform: capitalize;
+    font-family: 'Play', cursive;
+}
+
+/* menu- Navigation */
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #17252a;
+    overflow-x: hidden;
+    padding-top: 20px;
+    font-family: 'Play', cursive;
+    border-radius: 0px 50px 0px 0px;
+}
+
+.sidenav a {
+    padding: 6px 8px 25px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #feffff;
+    display: block;
+}
+
+.sidenav a:hover {
+    background: #DEF2F1;
+    color: #3AAFA9;
+    text-decoration: overline;
+}
+
+.sidenav a:active {
+    background: #F76C6C;
+    color: #F8E9A1;
+    cursor: default;
+}
+
+/* grid*/
+
+.grid-item1 {
+    grid-area: header;
+    background-color: #FEFFFF;
+}
+
+.grid-item2 {
+    grid-area: menu;
+}
+
+.grid-item3 {
+    grid-area: intro;
+    background-color: #2b7a78;
+    padding: 50px;
+    display: grid;
+    margin-bottom: 2em;
+    border-radius: 0px 50px 0px;
+}
+
+.grid-item3 div {
+    font-family: cursive;
+    font-size: 2.5em;
+    color: #FEFFFF;
+    letter-spacing: -1px;
+}
+
+.grid-item4 {
+    grid-area: main;
+}
+
+.grid-item5 {
+    grid-area: footer;
+    background-color: #feffff;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas: 'menu header header header header header' 'menu intro intro intro intro intro' 'menu main main main main main' 'footer footer footer footer footer footer';
+    width: 100vw;
+    /* make full width and height of device screen */
+    height: 100vh;
+    margin-left: 1em;
+}
+
+.grid-container>div {
+    background-color: rgba (255, 255, 255, 0);
+    font-size: 30px;
+    position: relative;
+    left: 3.0em;
+}
+
+.intro-grid-container {
+    display: flex;
+    flex-flow: row warp;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1em;
+}
+
+.intro-grid-item1 {
+    left: 2em;
+    flex-basis: 30%;
+}
+
+.intro-grid-item2 {
+    flex-basis: 60%;
+    border-color: grey;
+    align-self: flex-end;
+    margin-bottom: 10px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    /* fr > % px */
+    grid-gap: 0.5em;
+    padding-top: 0.2em;
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+    /*grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: stretch
+    align-items: stretch*/
+}
+
+.content-container>div {
+    font-family: 'Play', cursive;
+}
+
+.content-container>div:nth-child(odd) {
+    background: #f3d250;
+    color: #17252a;
+    text-align: center;
+}
+
+h4 {
+    -webkit-text-stroke: 1px #17252a;
+    color: #DEF2F1;
+    font-size: 1.5em;
+}
+
+.content-container>div:nth-child(even) {
+    background: rgba(248, 240, 201, 0.8);
+    padding: 2em;
+    text-align: center;
+}
+
+#about-me-left {
+    text-align: left;
+}
+
+#table-center {
+    margin: 1em auto;
+}
+
+.nested-video {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 1em;
+}
+
+.nested-video>div {
+    background: #DEF2F1;
+    padding: 1em;
+}
+
+#contact-form {
+    width: 50%;
+    border-radius: 5px;
+    background: rgba(220, 220, 220, 0.5);
+    padding: 100px;
+    margin: auto;
+    text-align: left;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0px;
+    border: 1px solid #3AAFA9;
+    border-radius: 4px;
+}
+
+input[type=submit] {
+    width: 30%;
+    background: #2b7a78;
+    padding: 14px 20px;
+    margin: 30px 0px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background: #f3d250;
+}
+
+/* footer */
+
+#footer-area {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #feffff;
+}
+
+.footerLinks {
+    list-style-type: none;
+}
+
+.footerLinks li {
+    display: inline-block;
+}
+
+.footerLinks a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 14px 16px;
+    color: #3AAFA9;
+}
+
+.fa-sort-up {
+    font-size: 2.5em;
+    color: #3AAFA9;
+}
+
+.fa-medium {
+    font-size: 3em;
+    color: rgb(0, 171, 108);
+    padding: 20px;
+}
+
+.fa-linkedin {
+    font-size: 3em;
+    color: rgb(59, 89, 152);
+    padding: 20px;
+}
+
+.fa-github {
+    font-size: 3em;
+    color: rgb(20, 20, 20);
+    padding: 20px;
+}
+
+details {
+    font-family: 'Play', cursive;
+}
+
+summary {
+    outline: none;
+}
+
+/* SVG - commented out */
+
+svg {
+    display: block;
+}
+
+.rectangle {
+    color: red;
+    stroke: black;
+    stroke-width: 5;
+    opacity: 0.5;
+}

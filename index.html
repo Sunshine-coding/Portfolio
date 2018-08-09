@@ -1,0 +1,189 @@
+<!-- This is HyeSoo's portfolio-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HyeSoo's Portpolio</title>
+    <link rel='stylesheet' href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.2.6/collection/icon/icon.css">
+    <link href="https://fonts.googleapis.com/css?family=Play&amp;subset=latin-ext" rel="stylesheet">
+</head>
+
+<body>
+    <div class="grid-container">
+        <div class="grid-item1" id="header">
+            <div class="intro-grid-container">
+                <div class="intro-grid-item1">
+                    <figure>
+                        <img src="./assets/images/HyeSooPark.png" id="hyesoo-photo" alt="image of HyeSoo" width="100" height="130">
+                    </figure>
+                </div>
+                <div class="intro-grid-item2">
+                    <div class="intro-highlight"> I love to design & build our ideas, based on our life story.</div>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item2">
+            <nav class="sidenav">
+                <a href="#" target="_blank">Home</a>
+                <a href="#skills" target="_blank">Skills</a>
+                <a href="#hobbies" target="_blank">Hobbies </a>
+                <a href="#" target="_blank">Projects</a>
+                <a href="#resources" target="_blank">Resources</a>
+                <a href="#contact" target="_blank">Contact</a>
+            </nav>
+        </div>
+        <div class="grid-item3">
+            <div>
+                <p class="intro1">Interactive Designer &amp;</p>
+                <p class="intro2"> Front-End developer</p>
+            </div>
+        </div>
+        <div class="grid-item4">
+            <div class="content-container">
+                <!--About me-->
+                <div>
+                    <h4>:-D I'm HyeSoo.</h4>
+                </div>
+                <div id="about-me-left"> Hei, I am HyeSoo :D
+                    <br/> I build our idea, based on our story. </br>
+                    I create beautiful things for web and build our idea.
+                    <br/> I am interested in making useful and helpful applicaitons for the world.
+                    <br/>
+                </div>
+                <!--Skills-->
+                <div id="skills">
+                    <h4>About my skills:)</h4>
+                </div>
+                <!--Non-blocking elements such as span, input, label, a link-->
+                <!--Blocking elements such as h1-6, P, li, div, section-->
+                <div>
+                    <!--<svg width="50" height="50">
+                        <circle cx="50" cy="50" r="40" stroke="navy" stroke-width="2" fill="yellow" />
+                    </svg>
+                    <svg>
+                        <rect x="50" y="20" rx="20" ry="20" width="150" height="150" class="rectangle"></rect>
+                    </svg>-->
+                    <section>
+                        <article>
+                            <h5>HTML5</h5>
+                            <progress value="80" max="100"></progress>
+                            <h5>CSS</h5>
+                            <progress value="80" max="100"></progress>
+                            <h5>JavaScript</h5>
+                            <progress value="70" max="100"></progress>
+                        </article>
+                    </section>
+                </div>
+                <!--Hobbies-->
+                <div id="hobbies">
+                    <h4>Hobbies:)</h4>
+                </div>
+                <div>
+                    <section>
+                        <figure>
+                            <img src="/assets/images/bike.png" alt="Bike">
+                            <figcaption>I like cycling:)</figcaption>
+                        </figure>
+                        <table id="table-center">
+                            <thead>
+                                <tr style="color:  #2b7a78;">
+                                    <th>No.</th>
+                                    <th>Hobbies</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>traveling</td>
+                                </tr>
+                                <tr>
+                                    <td>2.</td>
+                                    <td>drawing</td>
+                                </tr>
+                                <tr>
+                                    <td>3.</td>
+                                    <td>cycling</td>
+                                </tr>
+                                <tr>
+                                    <td>4.</td>
+                                    <td>traveling</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </div>
+                <!--Resources-->
+                <div id="resources">
+                    <h4>Resources</h4>
+                </div>
+                <div class="nested-video">
+                    <div>Youtube video : Jazz music</div>
+                    <div>
+                        <!-- Autoplay for youtube video :  at the end of the url, add ?autoplay=1-->
+                        <iframe width="300" height="250" src="https://www.youtube.com/embed/Z-gwMu3hAx0?">
+                        </iframe>
+                    </div>
+                    <div>Downloaded video : bearrrr</div>
+                    <div>
+                        <video width="320" height="240" controls>
+                            <source src="./assets/videos/movie.mp4" type="video/mp4"> Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+                <!--contact-->
+                <div id="contact">
+                    <h4>Contact</h4>
+                </div>
+                <div>
+                    <form id="contact-form">
+                        <label for=fname>First name</label>
+                        <input type="text" id="fname" name="fname" placeholder="Your first name">
+                        <label for="lname">Last name</label>
+                        <input type="text" id="lname" name="lname" placeholder="Your last name">
+                        <label for=phone>Phone number</label>
+                        <input type="text" id="phone" name="phone" placeholder="Your phone number">
+                        <label for=email>Email</label>
+                        <input type="text" id="email" name="email" placeholder="Your email">
+                    <input type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="grid-item5">
+            <footer id="footer-area">
+                    <a href="#header"><i class="fas fa-sort-up"></i></a>
+                <details>
+                    <summary> &copy;
+                        <time>2018</time>HyeSoo Park. All right reserved.</summary>
+                    <p>All the content and graphics on this website were designed by HyeSoo</p>
+                </details>
+                <ul class="footerLinks">
+                    <li>
+                        <a href="https://github.com/flyjwayur" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/hyesoo-park-108719109/" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://medium.com/topic/technology" target="_blank">
+                            <i class="fab fa-medium"></i>
+                        </a>
+                    </li>
+
+                </ul>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>
